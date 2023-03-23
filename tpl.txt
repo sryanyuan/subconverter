@@ -1,0 +1,10 @@
+proxies:{{range .}}
+  - name: {{.Name}}
+    type: {{.Type}}
+    server: {{.Server}}
+    port: {{.Port}}
+    password: {{.Password}}
+    udp: {{.Udp}}
+    sni: {{.Sni}}
+    network: {{.Network}}
+    skip-cert-verify: {{.SkipCertVerify}}{{end}}
